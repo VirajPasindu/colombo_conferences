@@ -4,36 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Colombo Conferences</title>
-    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <style>
         .logo {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            width: 170px; /* Adjust size as needed */
+            width: 170px; /* Reduced size for better alignment */
             height: auto;
+            margin-left: 15px;
         }
         header {
             position: relative;
-            padding-top: 80px; /* Add padding to prevent content overlap with logo */
+            background-color: rgba(97, 95, 95, 0.8);
+            padding: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav {
+            text-align: center;
+            flex-grow: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd700; /* Gold hover color */
+        }
+        h2 {
+            font-size: 3.5em; /* Increased font size */
+            line-height: 1.3; /* Adjusted for readability */
+            text-align: center;
+            color: #c7c5c5;
+            margin: 40px 0;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                margin: 10px 0;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 8px 0;
+            }
+            h2 {
+                font-size: 2em; /* Slightly smaller for mobile */
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <img src="images/cc-logo-1.png" alt="Colombo Conferences Logo" class="logo">
-        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#event-management">Event Management & MICE Services</a></li>
+                <li><a href="#conference-rooms">Conference Rooms in Colombo</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Upcoming Conferences</h2>
-            <ul>
-                <li>Conference 1 - Date: 2023-10-01</li>
-                <li>Conference 2 - Date: 2023-11-15</li>
-                <li>Conference 3 - Date: 2023-12-20</li>
-            </ul>
-        </section>
+        <h2>About Colombo Conferences | Sri Lanka’s Top MICE Specialists Since 2015</h2>
+        <p>About Colombo Conferences, a premier event management company based in Sri Lanka, renowned for excellence. Since 2015, we’ve been transforming ideas into unforgettable experiences, specializing in Meetings, Incentives, Conferences, and Exhibitions (MICE).
+
+Located in Colombo, we pride ourselves on delivering comprehensive event solutions for local corporates and international clients, including event companies from India (Bangalore, Mumbai, Delhi) and the Middle East (Dubai, UAE). Learn more about Colombo Conferences and our passion for creating impactful events worldwide. Our mission is to make Sri Lanka a top MICE destination by blending creativity, professionalism, and local expertise.</p>
+
+<br><br>
+        <h2>Why Global Brand Trust Colombo Conferences For MICE Events</h2>
+
+        <p>At Colombo Conferences, we’ve spent over 10 years perfecting the art of unforgettable events. Whether it’s finding the perfect venue, managing logistics, setting up top-notch audiovisual experiences, or keeping your guests engaged, we’ve got it covered. Our goal? To make every event run smoothly and leave a lasting impression.
+
+We’re proud to have worked with big names like HSBC, USAID, and the University of Colombo, plus impactful organizations like the Asia Foundation, which drives sustainable growth in the region. Our partnerships with the Export Development Board of Sri Lanka fuel trade and innovation, while our trusted collaborators—ColomboExpo (check out colomboexpo.com), LankaVoyage, and ColomboWeddings (visit colomboweddings.com)—bring expertise in expos, travel, tourism, and weddings. Together, we create standout MICE events (Meetings, Incentives, Conferences, and Exhibitions) that go beyond expectations.
+
+Looking for something extra special? Our certified travel partner, TravelMyAsia, crafts luxury incentive travel experiences that reward and inspire. With Colombo Conferences, you’re not just getting an event—you’re getting excellence, innovation, and a team that cares.</p>
     </main>
     <footer>
         <p>© 2023 Colombo Conferences</p>
