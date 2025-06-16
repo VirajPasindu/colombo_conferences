@@ -52,6 +52,52 @@
             color: #c7c5c5;
             margin: 40px 0;
         }
+        main {
+            max-width: 1200px; /* Increased to accommodate four cards */
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Fixed four columns for horizontal layout */
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-content h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+        .card-content p {
+            font-size: 1em;
+            color: #666;
+            margin: 0;
+        }
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -59,6 +105,7 @@
             }
             .logo {
                 margin: 10px 0;
+                width: 120px; /* Smaller for mobile */
             }
             nav ul {
                 flex-direction: column;
@@ -68,6 +115,9 @@
             }
             h2 {
                 font-size: 2em; /* Slightly smaller for mobile */
+            }
+            .card-container {
+                grid-template-columns: 1fr; /* Stack cards vertically on mobile */
             }
         }
     </style>
@@ -89,18 +139,43 @@
     </header>
     <main>
         <h2>About Colombo Conferences | Sri Lanka’s Top MICE Specialists Since 2015</h2>
-        <p>About Colombo Conferences, a premier event management company based in Sri Lanka, renowned for excellence. Since 2015, we’ve been transforming ideas into unforgettable experiences, specializing in Meetings, Incentives, Conferences, and Exhibitions (MICE).
-
-Located in Colombo, we pride ourselves on delivering comprehensive event solutions for local corporates and international clients, including event companies from India (Bangalore, Mumbai, Delhi) and the Middle East (Dubai, UAE). Learn more about Colombo Conferences and our passion for creating impactful events worldwide. Our mission is to make Sri Lanka a top MICE destination by blending creativity, professionalism, and local expertise.</p>
-
-<br><br>
-        <h2>Why Global Brand Trust Colombo Conferences For MICE Events</h2>
-
-        <p>At Colombo Conferences, we’ve spent over 10 years perfecting the art of unforgettable events. Whether it’s finding the perfect venue, managing logistics, setting up top-notch audiovisual experiences, or keeping your guests engaged, we’ve got it covered. Our goal? To make every event run smoothly and leave a lasting impression.
-
-We’re proud to have worked with big names like HSBC, USAID, and the University of Colombo, plus impactful organizations like the Asia Foundation, which drives sustainable growth in the region. Our partnerships with the Export Development Board of Sri Lanka fuel trade and innovation, while our trusted collaborators—ColomboExpo (check out colomboexpo.com), LankaVoyage, and ColomboWeddings (visit colomboweddings.com)—bring expertise in expos, travel, tourism, and weddings. Together, we create standout MICE events (Meetings, Incentives, Conferences, and Exhibitions) that go beyond expectations.
-
-Looking for something extra special? Our certified travel partner, TravelMyAsia, crafts luxury incentive travel experiences that reward and inspire. With Colombo Conferences, you’re not just getting an event—you’re getting excellence, innovation, and a team that cares.</p>
+        <p>About Colombo Conferences, a premier event management company based in Sri Lanka, renowned for excellence. Since 2015, we’ve been transforming ideas into unforgettable experiences, specializing in Meetings, Incentives, Conferences, and Exhibitions (MICE).</p>
+        <p>Located in Colombo, we pride ourselves on delivering comprehensive event solutions for local corporates and international clients, including event companies from India (Bangalore, Mumbai, Delhi) and the Middle East (Dubai, UAE). Learn more about Colombo Conferences and our passion for creating impactful events worldwide. Our mission is to make Sri Lanka a top MICE destination by blending creativity, professionalism, and local expertise.</p>
+        <br><br>
+        <h2>Why Global Brands Trust Colombo Conferences For MICE Events</h2>
+        <p>At Colombo Conferences, we’ve spent over 10 years perfecting the art of unforgettable events. Whether it’s finding the perfect venue, managing logistics, setting up top-notch audiovisual experiences, or keeping your guests engaged, we’ve got it covered. Our goal? To make every event run smoothly and leave a lasting impression.</p>
+        <p>We’re proud to have worked with big names like HSBC, USAID, and the University of Colombo, plus impactful organizations like the Asia Foundation, which drives sustainable growth in the region. Our partnerships with the Export Development Board of Sri Lanka fuel trade and innovation, while our trusted collaborators—ColomboExpo (check out colomboexpo.com), LankaVoyage, and ColomboWeddings (visit colomboweddings.com)—bring expertise in expos, travel, tourism, and weddings. Together, we create standout MICE events (Meetings, Incentives, Conferences, and Exhibitions) that go beyond expectations.</p>
+        <p>Looking for something extra special? Our certified travel partner, TravelMyAsia, crafts luxury incentive travel experiences that reward and inspire. With Colombo Conferences, you’re not just getting an event—you’re getting excellence, innovation, and a team that cares.</p>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/hafle connect.jpg" alt="Hafele Connect Event">
+                <div class="card-content">
+                    <h3>Hafele Connect Event</h3>
+                    <p>A high-impact conference with global leaders in Colombo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/women career.jpg" alt="14th Professional & Women Career Global Award 2024">
+                <div class="card-content">
+                    <h3>14th Professional & Women Career Global Award 2024</h3>
+                    <p>Luxury travel experiences crafted by TravelMyAsia.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/event3.jpg" alt="Tech Expo">
+                <div class="card-content">
+                    <h3>Tech Expo 2023</h3>
+                    <p>Innovative exhibitions in partnership with ColomboExpo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/event4.jpg" alt="Cultural Conference">
+                <div class="card-content">
+                    <h3>Cultural Conference 2023</h3>
+                    <p>Celebrating Sri Lanka’s heritage with global attendees.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>© 2023 Colombo Conferences</p>
