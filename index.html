@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,26 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .logo {
-            width: 170px;
-            /* Reduced size for better alignment */
+            width: 170px; /* Reduced size for better alignment */
             height: auto;
             margin-left: 15px;
         }
-
         header {
             position: relative;
             background-color: rgba(97, 95, 95, 0.8);
-            padding: 30px 0;
+            padding: 20px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-
         nav {
             text-align: center;
             flex-grow: 1;
         }
-
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -37,11 +32,9 @@
             justify-content: center;
             flex-wrap: nowrap;
         }
-
         nav ul li {
-            margin: 0 10px;
+            margin: 0 20px; /* Increased spacing between nav items */
         }
-
         nav ul li a {
             color: #fff;
             text-decoration: none;
@@ -49,44 +42,33 @@
             font-weight: bold;
             transition: color 0.3s ease;
         }
-
         nav ul li a:hover {
-            color: #ffd700;
-            /* Gold hover color */
+            color: #ffd700; /* Gold hover color */
         }
-
         h2 {
-            font-size: 3.5em;
-            /* Increased font size */
-            line-height: 1.3;
-            /* Adjusted for readability */
+            font-size: 3.5em; /* Increased font size */
+            line-height: 1.3; /* Adjusted for readability */
             text-align: center;
             color: #c7c5c5;
             margin: 40px 0;
         }
-
         main {
-            max-width: 1200px;
-            /* Increased to accommodate four cards */
+            max-width: 1200px; /* Increased to accommodate four cards */
             margin: 20px auto;
             padding: 0 15px;
         }
-
         p {
             font-size: 1.1em;
             line-height: 1.6;
             color: #ffffff;
             margin-bottom: 20px;
         }
-
         .card-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            /* Fixed four columns for horizontal layout */
+            grid-template-columns: repeat(4, 1fr); /* Fixed four columns for horizontal layout */
             gap: 20px;
             margin: 40px 0;
         }
-
         .card {
             background-color: #fff;
             border-radius: 8px;
@@ -94,67 +76,52 @@
             overflow: hidden;
             transition: transform 0.3s ease;
         }
-
         .card:hover {
             transform: translateY(-5px);
         }
-
         .card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-
         .card-content {
             padding: 15px;
             text-align: center;
         }
-
         .card-content h3 {
             font-size: 1.5em;
             margin: 10px 0;
             color: #2c3e50;
         }
-
         .card-content p {
             font-size: 1em;
             color: #666;
             margin: 0;
         }
-
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
                 align-items: center;
             }
-
             .logo {
                 margin: 10px 0;
-                width: 120px;
-                /* Smaller for mobile */
+                width: 120px; /* Smaller for mobile */
             }
-
             nav ul {
                 flex-direction: column;
             }
-
             nav ul li {
-                margin: 8px 0;
+                margin: 10px 0; /* Adjusted for vertical stacking on mobile */
             }
-
             h2 {
-                font-size: 2em;
-                /* Slightly smaller for mobile */
+                font-size: 2em; /* Slightly smaller for mobile */
             }
-
             .card-container {
-                grid-template-columns: 1fr;
-                /* Stack cards vertically on mobile */
+                grid-template-columns: 1fr; /* Stack cards vertically on mobile */
             }
         }
     </style>
 </head>
-
 <body>
     <header>
         <img src="images/cc-logo-1.png" alt="Colombo Conferences Logo" class="logo">
@@ -209,9 +176,9 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/avenue annual.jpg" alt="315 Work Avenue Annual Meeting 2024 ">
+                <img src="images/avenue annual.jpg" alt="315 Work Avenue Annual Meeting 2024">
                 <div class="card-content">
-                    <h3>315 Work Avenue Annual Meeting 2024 </h3>
+                    <h3>315 Work Avenue Annual Meeting 2024</h3>
                 </div>
             </div>
             <div class="card">
@@ -247,8 +214,7 @@
         </div>
     </main>
     <footer>
-        <p>© 2023 Colombo Conferences</p>
+        <p>© 2025 Colombo Conferences (Pvt) Ltd. | Event Management & MICE in Sri Lanka</p>
     </footer>
 </body>
-
 </html>
